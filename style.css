@@ -1,0 +1,59 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  /*Aca le incluis la Google font del html. Tambien le damos una segunda fuente en caso que un navegador no la pueda reproducir*/
+  font-family: 'Montserrat', sans-serif;
+ /*Este es el codigo meta de CSS Tricks que hace que el background sea responsive. En el () le pones la url de la imagen de tu fondo*/
+  background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+	/*Esto le dice que tiene que tener un tamaño 3 veces mayor a lo que tiene establecido el archivo html*/
+	font-size: 3rem;
+	color: #e2dbdb;
+}
+
+hr {
+
+	border-color: #F05F44;
+	/*Esto le da el ancho a la linea horizontal.*/
+	border-width: 3px;
+	/*Esto le da un maximo de ancho a la linea horizontal.*/
+	max-width: 65px;
+
+}
+
+.buffer{
+		height: 15rem;
+}
+
+.btn{
+	font-weight: 700;
+	/*Esto permite darle un estilo redondeado al boton*/
+	border-radius: 300px;
+	/*Esto hace que el texto del boton este en mayusculas*/
+	text-transform: uppercase;
+}
+
+.btn-primary{ 
+			background-color: #F05F44;
+			border-color: #F05F44;
+				 }
+
+.btn-primary:hover{
+
+					background-color: #ee4b08;
+					border-color: #ee4b08;
+					/*Esto hace que aumente el tamaño del boton al hacer hover, lo cual le da un efecto*/
+					border-width: 4px;
+}
+.btn-xl{
+		/*El padding es el espacio que hay entre el texto y el borde interior, que no es lo mismo que el margen (ver box model).*/
+		padding: 1rem 2rem;
+}
+

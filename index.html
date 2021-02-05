@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+
+    <!-- Required meta tags. Permite establecer información meta, se recomienda que siempre esté. Por ejemplo, permite adaptarse a
+    celulares. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <!-- Al darle las clases container y row, le estoy diciendo que quiero aplicar la funcionalidad Layouts Grid de Bootstrap. A partir de ahi ya puedo ordenar facilmente el display de la pagina.
+
+    Por otro lado, también le doy otra funcionalidad de Bootstrap que se llama d-flex, para armar un flex box que permita alinear correctamente el contenido. Pero para que esto aplique correctamente, hay que tener en cuenta que el container es ahora el 100% de la pagina para esta div, con lo cual, tengo que decirle h-100, es decir height 100% para que lo aplique a todo el container y las letras queden efectivamente en el centro del elemento.  -->
+    <div class="container d-flex align-items-center h-100">
+      <div class="row">
+        <!-- text-center es una funcionalidad de Bootstrap que permite centrar el texto. Además, le agregamos col-12 para que sepa que quiero que ocupe todo el espacio de la pagina. -->
+        <header class="text-center col-12" >
+          <!-- class="text-uppercase" es una funcionalidad de Bootstrap para poner mayusculas -->
+         <h1 class="text-uppercase"><strong>The Biggest Startup Event of the Year</strong></h1>
+       </header>
+
+       <!-- La funcionalidad buffer de Bootstrap, es util para agregar espaciado entre elementos. Aca lo que hago es separar el h1 del button. En CSS le di estilo para darle tamaño, porque asi como esta a continuación, no hace nada. -->
+       <div class="buffer col-12"></div>
+
+        <section class="text-center col-12">
+        <hr>
+        <!-- Este codigo lo saqué de Bootstrap.
+        Tener presente que a la clase se le puede dar varios nombres y formatear cada una por separado. Cada una contiene a la otra, con lo cual tengo que formatearlas en orden. Si doy estilo a btn-xl por ejemplo, no aplica a btn-primary ni a btn. -->
+       <a href="https://mailchi.mp/a5fbd161e1ca/startup"><button class="btn btn-primary btn-xl">Find Out More</button></a>
+       </section>
+      </div>
+  </div>
+
+  </body>
+</html>
